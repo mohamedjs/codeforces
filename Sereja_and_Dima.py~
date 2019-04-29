@@ -1,0 +1,7 @@
+n            = int(input())
+cards        = map(int,input().split())
+player       = list(cards)
+players=sorted(player, reverse=True)
+first  = [num if i%2==0 else 0 for i,num in enumerate(players)]
+second = [num if i%2!=0 else 0 for i,num in enumerate(players)]
+print(sum(first),sum(second))
