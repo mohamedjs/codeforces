@@ -1,0 +1,9 @@
+x,y = map(int,input().split())
+sum=0
+for i in range(x):
+    number1 = list(map(int,list(input())))
+    number2 = list(range(y))
+    if(number1 == number2):
+        sum+=1
+    
+    
