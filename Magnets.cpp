@@ -5,8 +5,9 @@
 #include <cstring>
 using namespace std;
 
-int main(){
-    long int n;
+int main()
+{
+	long int n;
 	cin >> n;
 
 	int first;
@@ -14,10 +15,10 @@ int main(){
 
 	int count = 0;
 	int second; // gets second of every second magnets
-	for(long int i = 0; i < n - 1; i++)
+	for (long int i = 0; i < n - 1; i++)
 	{
 		cin >> second;
-		if(first != second)
+		if (first != second)
 			count++;
 
 		first = second;

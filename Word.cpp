@@ -4,25 +4,30 @@
 #include <algorithm>
 using namespace std;
 
-int main(){
+int main()
+{
     string word;
-    int s1=0,s2=0;
-    cin>>word;
-    for(int i=0;i<word.length();i++){
-        if(isupper(word.at(i))){
-           s1++;
+    int s1 = 0, s2 = 0;
+    cin >> word;
+    for (int i = 0; i < word.length(); i++)
+    {
+        if (isupper(word.at(i)))
+        {
+            s1++;
         }
-        else{
+        else
+        {
             s2++;
         }
     }
-    if(s1>s2){
-       transform(word.begin(), word.end(), word.begin(), ::toupper);
-        cout<<word<<endl;
+    if (s1 > s2)
+    {
+        transform(word.begin(), word.end(), word.begin(), ::toupper);
+        cout << word << endl;
     }
-    else{
+    else
+    {
         transform(word.begin(), word.end(), word.begin(), ::tolower);
-        cout<<word<<endl;
+        cout << word << endl;
     }
-  
 }
